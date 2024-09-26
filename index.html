@@ -1,0 +1,50 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Simple Calculator</title>
+  <link  rel="stylesheet" href="css/bootstrap.min.css">
+  <link rel="stylesheet" href="style.css">
+  <script src="js/bootstrap.bundle.min.js"></script>
+</head>
+
+<body>
+  <div class="calculator  bg-secondary">
+    <input type="text" class="form-control display" id="display" disabled>
+    <div class="row mt-2">
+      <div class="col-3"><button class="btn btn-clear" onclick="ClearDisplay()">C</button></div>
+      <div class="col-3"><button class="btn btn-operator" onclick="AppendCharacter('/')">/</button></div>
+      <div class="col-3"><button class="btn btn-operator" onclick="AppendCharacter('*')">*</button></div>
+      <div class="col-3"><button class="btn btn-backspace" onclick="Backspace()">←</button></div>
+
+    </div>
+    <div class="row mt-2">
+      <div class="col-3"><button class="btn btn-number" onclick="AppendCharacter('7')">7</button></div>
+      <div class="col-3"><button class="btn btn-number" onclick="AppendCharacter('8')">8</button></div>
+      <div class="col-3"><button class="btn btn-number" onclick="AppendCharacter('9')">9</button></div>
+      <div class="col-3"><button class="btn btn-operator" onclick="AppendCharacter('-')">-</button></div>
+    </div>
+    <div class="row mt-2">
+      <div class="col-3"><button class="btn btn-number" onclick="AppendCharacter('4')">4</button></div>
+      <div class="col-3"><button class="btn btn-number" onclick="AppendCharacter('5')">5</button></div>
+      <div class="col-3"><button class="btn btn-number" onclick="AppendCharacter('6')">6</button></div>
+      <div class="col-3"><button class="btn btn-operator" onclick="AppendCharacter('+')">+</button></div>
+    </div>
+    <div class="row mt-3">
+      <div class="col-3"><button class="btn btn-number" onclick="AppendCharacter('1')">1</button></div>
+      <div class="col-3"><button class="btn btn-number" onclick="AppendCharacter('2')">2</button></div>
+      <div class="col-3"><button class="btn btn-number" onclick="AppendCharacter('3')">3</button></div>
+      <div class="col-3"><button class="btn btn-secondary" onclick="CalculateResult()">=</button></div>
+    </div>
+    <div class="row mt-3">
+      <div class="col-6"><button class="btn btn-number" onclick="AppendCharacter('0')">0</button></div>
+      <div class="col-6"><button class="btn btn-number" onclick="AppendCharacter('.')">.</button></div>
+
+    </div>
+  </div>
+  <script src="script.js"></script>
+</body>
+
+</html>
