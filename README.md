@@ -22,3 +22,6 @@ A responsive and elegant calculator built using **HTML**, **CSS**, **Bootstrap**
 - **CSS3**: Used for the styling and layout of the calculator.
 - **Bootstrap 5**: Ensures the calculator is responsive and styled with modern UI elements.
 - **JavaScript**: Handles all the calculator's functionality including arithmetic operations, clearing the display, backspace, and result calculation.
+
+## Demo 
+https://lakshmi-321.github.io/Simple-Calculator/
